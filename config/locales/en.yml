@@ -20,28 +20,28 @@ en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "Terms and Conditions"
-        email: Email
-        name: Name
-        password: Password
-        password_confirmation: Password Confirmation
+        accepted_terms: "Kullanım Şartları"
+        email: Eposta
+        name: İsim
+        password: Şifre
+        password_confirmation: Şifre tekrarı
     errors:
       models:
         user:
-          confirmation: doesn't match Password
+          confirmation: Şifreler aynı olmalı
   administrator:
     site_settings:
       authentication:
-        disabled: Disabled
-        enabled: Enabled
-        info: Only allow authenticated users to join a room
-        title: Require Authentication for Rooms
-        user-info: You must sign in to Greenlight to join this room
+        disabled: Etkin değil
+        enabled: Etkin
+        info: Sadece onaylı kişiler
+        title: Odalar için onay gerekir
+        user-info: Üye olmalısınız
       branding:
-        change: Change Image
-        info: Change the branding image that appears in the top left corner
-        placeholder: Image Url...
-        title: Branding Image
+        change: Resmi değiştir
+        info: Solda görünen resmi değiştirir
+        placeholder: Resim adresi...
+        title: BMarka resmi
       cache:
         info: Clears the stored provider cache which forces a new request for the updated info
         title: Clear Provider Cache
@@ -52,10 +52,10 @@ en:
         button: Clear Auth
       color:
         info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
-        title: Primary Color
-        regular: Regular
-        lighten: Lighten
-        darken: Darken
+        title: Ana renk
+        regular: Normal
+        lighten: Açık
+        darken: Koyu
       log_level:
         title: Log Level
         information: Change the Log Level for the entire deployment
@@ -70,28 +70,28 @@ en:
         title: Recording Default Visibility
         warning: This setting will only be applied to rooms that aren't running
       registration:
-        info: Change the way that users register to the website
-        title: Registration Method
+        info: Öğrenciler nasıl kayıt olur
+        title: Kayıt Türü
         methods:
-          approval: Approve/Decline
-          invite: Join by Invitation
-          open: Open Registration
+          approval: Onay ile
+          invite: Davetiye
+          open: Açık
       rooms:
-        info: Limits the number of rooms that a user can have (including Home Room). This setting does not apply to administrators.
-        title: Number of Rooms per User
+        info: Sınıf açma sınırı
+        title: Kullanıcı başı sınıf sayısı
       shared_access:
         info: Setting to disabled will remove the button from the Room options dropdown, preventing users from sharing rooms
-        title: Allow Users to Share Rooms
-      subtitle: Customize Greenlight
-      title: Site Settings
+        title: Kullanıcılar sınıfı paylaşabilir
+      subtitle: Özelleştir
+      title: Site Ayarları
     flash:
-      approved: User has been successfully approved.
-      banned: User has been successfully banned.
-      unbanned: User has been successfully unbanned.
-      delete: User deleted successfully
-      delete_fail: Failed to delete user
-      demoted: User has been successfully demoted
-      invite: Invite successfully sent to %{email}
+      approved: Kullanıcı onaylandı.
+      banned: Kullanıcı engellendi.
+      unbanned: Kullanıcının engeli kaldırıldı.
+      delete: Kullanıcı silindi
+      delete_fail: Kullanıcı silinemedi
+      demoted: Kullanıcının durumu değişti
+      invite: Davetiye gönderildi %{email}
       invite_email_verification: Emails must be enabled in order to use this method. Please contact your system administrator.
       merge_fail: There was an issue merging the user accounts. Please check the users selected and try again 
       merge_success: User accounts merged successfully
@@ -103,20 +103,20 @@ en:
       settings: Site Settings successfully changed
       unauthorized: You are not authorized to perform actions on this user
     recordings:
-      title: Server Recordings
-      no_recordings: This server has no recordings.
+      title: Oturum Kayıtları
+      no_recordings: Kayıt Yok.
     roles:
       appear_in_share_list: Include users with this role in the dropdown for sharing rooms
-      can_create_rooms: Can create rooms
-      delete: Delete the role
+      can_create_rooms: Sınıf oluşturabilir
+      delete: Rolü sil
       invalid_create: There was a problem creating a new role. Please check the role values and try again
       invalid_order: There was a problem updating the priority of the role. Please check the values and try again
       invalid_update: There was a problem updating the permissions of the role. Please check the values and try again
       manage_rooms_recordings: Allow users with this role to manage server rooms and recordings
-      name: Role Name
-      new_role: Create a new role
-      role_has_users: This role is assigned to %{user_count} accounts. Please remove all accounts from this role before deleting it.
-      title: Roles
+      name: Rol Adı
+      new_role: Yeni bir rol oluştur
+      role_has_users: %{user_count} rol tanımlandı. Bu rolü silmeden önce hesapları silin.
+      title: Roller
       promote_email: Send an email to users when they are assigned this role
       demote_email: Send an email to users when they are removed from this role
       edit_site_settings: Allow users with this role to edit site settings
@@ -124,59 +124,59 @@ en:
       manage_users: Allow users with this role to manage users
       invalid_assignment: There was a problem assigning the roles to the user. Please check the values and try again 
       colour:
-        title: Role Colour
+        title: Rol rengi
         info: Set the colour that will be associated with the role
     rooms:
-      title: Server Rooms
+      title: Sınıflar
       table:
         id: ID
-        not_running: Not Running
-        running: Running
-        status: Status
-        view: View
-    title: Organization Settings
+        not_running: Çalışmıyor
+        running: Çalışıyor
+        status: Durum
+        view: Görüntüle
+    title: Kurum ayarları
     users:
-      invite: Invite User
+      invite: Kullanıcı davet et
       edit:
-        title: Edit User Details
+        title: kullanıcı düzenle
       settings:
-        approve: Approve
-        decline: Decline
-        ban: Ban User
-        delete: Delete
-        edit: Edit
-        edit_roles: Edit the user roles
-        perm_delete: Permanently Delete
-        unban: Unban User
-        undelete: Undelete
+        approve: Onayla
+        decline: Reddet
+        ban: Yasakla
+        delete: Sil
+        edit: Düzenle
+        edit_roles: Rolü düzenle
+        perm_delete: Tamamen sil
+        unban: Yasağını kaldır
+        undelete: Geri getir
       table:
-        authenticator: Authenticator
-        created: Created
-        name: Name
-        not_found: No users match your search
-        no_users: No users found
-        role: Role
+        authenticator: İzin veren
+        created: Oluşturuldu
+        name: İsim
+        not_found: Bulunamadı
+        no_users: Bulunamadı
+        role: Rol
         uid: User ID
         username: Username
-      title: Manage Users
+      title: Kullanıcıları yönet
   add_to_google_calendar: "Add to Google Calendar"
-  bigbluebutton: BigBlueButton
-  bigbluebutton_exception: Oops, there was an error when starting the meeting!
-  cancel: Cancel
+  bigbluebutton: Okulonline
+  bigbluebutton_exception: Sınıf başlatılamadı.
+  cancel: İptal
   cookies:
-    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
-    cookie_button: I Agree
-  copied: Copied
-  copy: Copy
+    cookie_info: Sistem performansı için çerezler kullanılmaktadır. Sistemi kullanarak, çerezleri kabul edersiniz.
+    cookie_button: Kabul
+  copied: Kopyalandı
+  copy: Kopyala
   date:
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
   default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
   delete: Delete
   delivery_error: An error occured during email delivery. Please contact an administrator!
-  docs: Documentation
+  docs: Dökümantasyon
   email: Email
   email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
-  enter_your_name: Enter your name!
+  enter_your_name: İsminizi girin!
   errors:
     bigbluebutton:
       help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
@@ -187,8 +187,8 @@ en:
       help: The error has been logged, we'll take a look!
       report: Report Issue
     maintenance:
-      message: Sorry, we're down for maintenance.
-      help: We'll be back soon!
+      message: Sunucu bakımı.
+      help: Kısa bir süre sonra buradayız!
     migration_error:
       contact_admin: If you are not an administrator, please contact one.
       continue: I'd like to stay using 1.0.
@@ -223,28 +223,28 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features
-    rooms: Personalized Rooms
-    recordings: Recording Management
-    designs: Custom Designs
-    authentication: User Authentication
+    title: Özellikler
+    rooms: Kişiselleştirilmiş Sınıflar
+    recordings: Kayıt Yönetimi
+    designs: Özel Tasarım
+    authentication: Öğrenci Yönetimi
   footer:
-    powered_by: Powered by %{href}.
+    powered_by: Okulonline.net
   forgot_password:
     subtitle: Forgot Password
     email: Email
     submit: Submit
   go_back: Go back
-  greenlight: Greenlight
+  greenlight: Okulonline
   header:
-    all_recordings: All Recordings
+    all_recordings: Tüm Kayıtlar
     dropdown:
-      account_settings: Organization
-      help: Need help?
+      account_settings: Kurumsal
+      help: yardım mı lazım?
       home: Home
-      settings: Profile
-      signout: Sign out
-  home_room: Home Room
+      settings: Profil
+      signout: Çıkış
+  home_room: Merkez Sınıf
   info_update_success: Information successfully updated.
   invalid_credentials: The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.
   invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
@@ -252,17 +252,17 @@ en:
   javascript:
     room:
       mailer:
-        subject: 'has invited you to view a recording.'
-        body: 'To view the recording, follow the link below:'
-        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
-        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
+        subject: 'ders kaydını izlemeni istedi.'
+        body: 'Ders kaydını izlemek için linki kullan:'
+        autogenerated: 'This e-mail is auto-generated by Okulonline.net.'
+        footer: 'Okulonline.net - Uzaktan Eğitim Sistemi.'
     search:
-      start: Start searching...
+      start: Aramaya başla...
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
+    about: "Okulonline.net - Sınıf oluşturabilirsiniz veya kısa bağlantılarla diğer sınıflara katılablirsiniz."
     welcome: Okulonline Hoşgeldiniz.
-    video: Watch our tutorial on using Greenlight
-    upgrade: Show me how to upgrade to 2.0!
+    video: Açıklamaları izleyin
+    upgrade: Okulonline.net
     version: We've released a new version of Greenlight, but your database isn't compatible.
   language_default: Default (browser language)
   ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
@@ -361,33 +361,33 @@ en:
       forgot_password: Forgot Password?
     rename_recording:
     remove_shared:
-      title: Are you sure you want to remove this room from your room list?
-      delete: I'm sure, remove this room.
+      title: Sınfı silmek istediğinizden emin misiniz?
+      delete: Eminim, sınıfı sil.
       warning: You will <b>not</b> be able to access this room anymore.
     room_settings:
-      title: Room Settings
-      update: Update Room
-      client: Select client type
-      join_moderator: All users join as moderators
-      mute: Mute users when they join
-      require_approval: Require moderator approval before joining
-      start: Allow any user to start this meeting
-      footer_text: Adjustment to your room can be done at anytime.
+      title: Sınıfı ayarları
+      update: Sınıfı düzenle
+      client: Client türü
+      join_moderator: Tüm katılımcılar moderatör
+      mute: Kullanıcı katıldığında sesini kıs
+      require_approval: Katılımda onay gerekir
+      start: Herhangi biri katılabilir
+      footer_text: Sınıf her an erişilebilir.
     rename_room:
-      name_placeholder: Enter a new room name...
+      name_placeholder: Sınıf adını girin...
     share_access:
-      footer: Sharing a room with a user allows them to start the room and view the room's recordings
-      list: Shared With
-      title: Share Room Access
-      save: Save Changes
-      cancel_changes: Cancel Changes
-      select: Select User
+      footer: Sınıfa katılmaları ve kayıtlı videoları izlemeleri için paylaş.
+      list: Paylaşılan
+      title: Sınıfı Erişimi Paylaş
+      save: Kaydet
+      cancel_changes: İptal et
+      select: Kullanıcı seç
     merge_user:
-      cancel: Cancel
-      from: Account to be Merged
-      title: Merge User Accounts
-      to: Primary Account
-      save: Merge
+      cancel: İptal et
+      from: Birleştirilecek hesap
+      title: Kullanıcı hesapları birleştir
+      to: Ana hesap
+      save: Birleştir
       footer: The rooms of the account to be merged will be transfered over to the Primary Account's room list and then the account will be deleted.
   name_update_success: Room name successfully changed!
   no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
@@ -412,28 +412,28 @@ en:
       recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
       verification_failed: reCAPTCHA verification failed, please try again.
   recording:
-    all_recordings: All Recordings
+    all_recordings: Tüm Kayıtlar
     email: Email Recording
     error: There was an error retrieving %{count} recording(s)
-    no_recordings: This room has no %{inject}recordings.
-    no_user_recordings: You currently have no recordings.
-    no_matched_recordings: No %{inject} recordings match your search.
-    recorded_on: Recorded on %{date}
+    no_recordings: bu sınıfta kayıt yok %{inject}
+    no_user_recordings: Hanüz video kaydınız yok.
+    no_matched_recordings: %{inject} aradığınız kayıt bulundu.
+    recorded_on: Kayıt tarihi %{date}
     table:
-      name: Name
-      thumbnails: Thumbnails
-      length: Length
-      users: Users
-      visibility: Visibility
-      formats: Formats
+      name: İsim
+      thumbnails: Ön izleme
+      length: Süre
+      users: Kullanıcılar
+      visibility: Görünürlük
+      formats: Biçim
     visibility:
-      public: Public
-      unlisted: Unlisted
+      public: Listelenen
+      unlisted: Listelenmeyen
     format:
-      notes: Notes
+      notes: Notlar
       podcast: Podcast
-      presentation: Presentation
-      statistics: Statistics
+      presentation: Sunum
+      statistics: İstatistik
       video: Video
   registration:
     approval:
@@ -449,110 +449,110 @@ en:
     invite:
       fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
       no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
-  remove: Remove
-  rename: Rename
+  remove: Sil
+  rename: Adı Değiştir
   reset_password:
-    subtitle: Reset Password
-    password: New Password
-    confirm: New Password Confirmation
-    update: Update Password
+    subtitle: Şifreyi sıfırla
+    password: Yeni şifre
+    confirm: Yeni şifre doğrulaması
+    update: Şifre güncelle
     auth_change: The authentication method has changed. Please check your email to set your password.
   roles:
-    active: Active
+    active: Etkin
     admin: Admin
-    banned: Banned
-    deleted: Deleted
-    pending: Pending
-    user: User
+    banned: Yasaklı
+    deleted: Silinmiş
+    pending: Bekliyor
+    user: Kullanıcı
   room:
-    access_code_required: Please enter a valid access code to join the room
-    create_room: Create a Room
-    create_room_error: There was an error creating the room
-    create_room_success: Room created successfully
+    access_code_required: Bu sınıfa erişim şifresi
+    create_room: Bir sınıf oluştur
+    create_room_error: Sınıf oluşturulurken hata
+    create_room_success: Sınıfı oluşturuldu
     delete:
-      home_room: Can't delete user's Home Room
-      success: Room deleted successfully
-      fail: Failed to delete room (%{error})
-    enter_the_access_code: Enter the room's access code
-    invalid_provider: You have entered an invalid url. Please check the url and try again.
-    invited: You have been invited to join
-    invite_participants: Invite Participants
-    join: Join
-    last_session: Last session on %{session}
-    login: Enter
-    owner: Owner
-    owner_banned: This room is currently unavailable
+      home_room: Kullanıcının sınıfı silinemez
+      success: Sınıf silindi
+      fail: Sınıf silme hatası (%{error})
+    enter_the_access_code: Sınıf erişim kodunu girin
+    invalid_provider: Hatalı bir bağlantı girdiniz. Lütfen kontrol ediniz.
+    invited: Sınıfa katılmaya davet edildiniz
+    invite_participants: Katılımcı davet et
+    join: Katıl
+    last_session: Son oturum %{session}
+    login: Gir
+    owner: Ogretmen
+    owner_banned: Bu sınıfa şu anda erişilemiyor
     no_room:
-      description: Enter the room url or the room id for the room you want to join.
-      edit_profile: Edit User Profile
-      go_to: Go to the Room
-      invalid_room_uid: The room url/uid you entered was invalid.
-      placeholder: Room url/uid
-      no_recent_rooms: You don't have any recently joined rooms
-      recent_rooms: Go To a Recently Joined Room
-      title: Join a Room
-    no_sessions: This room has no sessions, yet!
-    recordings: Room Recordings
-    room_limit: You have reached the maximum number of rooms allowed
-    room_limit_exceeded: You have exceeded the number of rooms allowed. Please delete %{difference} room(s) to access this room.
-    sessions: Sessions
-    settings: Room Settings
-    share: Manage Access
-    shared_by: Shared by %{email}
-    remove_shared_access_success: Successfully removed shared room from your room list
-    remove_shared_access_error: There was an error removing the shared room from your list
-    shared_access_success: Room shared successfully
-    shared_access_error: There was an error sharing the room
-    start: Start
+      description: Katılmak istediğiniz sınıfın bilgisini girin.
+      edit_profile: Kullanıcı Profilini Düzenle
+      go_to: Sınıfa Git
+      invalid_room_uid: Sınıf adı/ adresi hatalı.
+      placeholder: Sınıf adresi/adı
+      no_recent_rooms: En son girdiğiniz sınıf yok
+      recent_rooms: En son girdiğiniz sınıfa girin
+      title: Sınıfa gir!
+    no_sessions: bu sınıfın henüz oturumu yok!
+    recordings: Sınıf Kayıtları
+    room_limit: Daha fazla sınıf oluşturamazsınız
+    room_limit_exceeded: Maksimum sınıf sayısına ulaştınız.
+    sessions: Oturumlar
+    settings: Sınıf Ayarları
+    share: Erişimi Yönet
+    shared_by: Paylaşan %{email}
+    remove_shared_access_success: Sınıfı listenizden başarılı bir şekilde silindi
+    remove_shared_access_error: Paylaşılan sınıf silinemedi
+    shared_access_success: Sınıf paylaşıldı
+    shared_access_error: Sınıf paylaşılamadı
+    start: Başla
     unavailable: This room is currently unavailable due to the owner's email not being verified.
-    update_settings_error: There was an error updating the room settings
-    update_settings_success: Room settings successfully updated
+    update_settings_error: Sınıf ayarları düzenlendi
+    update_settings_success: Sınıf ayarları güncellendi
     wait:
-      message: The meeting hasn't started yet.
-      auto: You will automatically join when the meeting starts.
+      message: Öğretmen henüz gelmedi.
+      auto: Öğretmen geldiğinde otomatik olarak katılacaksın.
   settings:
     account:
-      fullname: Full name
-      language: Language
-      provider: Provider
-      image: Image
-      image_url: Profile Image URL
-      roles: User Roles
-      subtitle: Update your Account Info
-      title: Account Info
+      fullname: Tam İsim
+      language: Dil
+      provider: Sağlayan
+      image: Resim
+      image_url: Profil resim URL
+      roles: Kullanıcı Rolleri
+      subtitle: Hesap bilgisini güncelle
+      title: Hesap bilgisi
     delete:
-      button: Yes, I would like to delete my account.
-      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
-      subtitle: Permanently Delete your Account
-      title: Delete Account
+      button: Evet, hesabımı silmek istiyorum.
+      disclaimer: Hesabı silerseniz geri getirilemez, sınıflar ve kayıtlarda silinir.
+      subtitle: Hesabı tamamen sil
+      title: Hesabı sil
     password:
-      confirmation: New Password Confirmation
-      new: New Password
-      old: Old Password
-      subtitle: Change your Password
-      title: Password
-    title: Profile
-    search: Search
+      confirmation: Yeni şifre doğrulaması
+      new: Yeni şifre
+      old: Eski şifre
+      subtitle: Şifreyi değiştir
+      title: Şifre
+    title: Profil
+    search: Ara
   signup:
-    password_confirm: Password Confirmation
-    subtitle: Create an Account
-    title: Sign up
-    with: Sign up with %{provider}
+    password_confirm: Şifre Doğrulama
+    subtitle: Hesap Oluştur
+    title: Kayıt ol
+    with: Kayıt %{provider}
   terms:
-    accept: I accept the %{href}
-    accept_existing: I accept the terms and conditions
-    title: Terms and Conditions
+    accept: Kabul ediyorum %{href}
+    accept_existing: Kullanım şartlarını kabul ediyorum
+    title: Kullanım Şartları
   test_install: >
     This deployment is using a pre-configured testing server, you should replace this with your own.
-    For details, see the %{href}.
-  update: Update
+    Detaylar için %{href}.
+  update: Güncelle
   verify:
-    accept: Verify
-    activated: Account verified!
-    already_verified: Account has already been verified
-    invalid: Invalid verification link
-    not_verified: Your account has not been verified yet.
-    resend: Resend verification email
-    signin: Please sign in to access your account.
-    title: Verify your email
-    verification: Verification
+    accept: Onayla
+    activated: Hesap Onaylandı!
+    already_verified: Hesap zaten onaylandı
+    invalid: Hataylı onay bağlantısı
+    not_verified: Hesabınız henüz onaylanmadı.
+    resend: E-postayı tekrar gönder.
+    signin: Lütfen giriş yapın.
+    title: E-postanızı doğrulayın
+    verification: Doğrulama

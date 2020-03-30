@@ -41,7 +41,7 @@ en:
         change: Resmi değiştir
         info: Solda görünen resmi değiştirir
         placeholder: Resim adresi...
-        title: BMarka resmi
+        title: Marka resmi
       cache:
         info: Clears the stored provider cache which forces a new request for the updated info
         title: Clear Provider Cache
@@ -51,7 +51,7 @@ en:
         title: Clear Current Authenticator
         button: Clear Auth
       color:
-        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
+        info: Açık ve koyu olrak renkleri değiştirebilirsiniz.
         title: Ana renk
         regular: Normal
         lighten: Açık
@@ -66,9 +66,9 @@ en:
         fatal: Fatal
         unknown: Unknown
       recording_visibility:
-        info: Set the default recording visbility for new recordings
-        title: Recording Default Visibility
-        warning: This setting will only be applied to rooms that aren't running
+        info: Kayıltarın görünürlüğünü ayarlayın
+        title: Varsayılan kayıt görünürlüğü
+        warning: Bu ayar yalnızca çalışmayan odalara uygulanacak
       registration:
         info: Öğrenciler nasıl kayıt olur
         title: Kayıt Türü
@@ -80,7 +80,7 @@ en:
         info: Sınıf açma sınırı
         title: Kullanıcı başı sınıf sayısı
       shared_access:
-        info: Setting to disabled will remove the button from the Room options dropdown, preventing users from sharing rooms
+        info: Devre dışı bırakıldığında ayar, Oda seçenekleri açılır menüsünden düğmeyi kaldırır, preventing users from sharing rooms
         title: Kullanıcılar sınıfı paylaşabilir
       subtitle: Özelleştir
       title: Site Ayarları
@@ -92,40 +92,40 @@ en:
       delete_fail: Kullanıcı silinemedi
       demoted: Kullanıcının durumu değişti
       invite: Davetiye gönderildi %{email}
-      invite_email_verification: Emails must be enabled in order to use this method. Please contact your system administrator.
-      merge_fail: There was an issue merging the user accounts. Please check the users selected and try again 
-      merge_success: User accounts merged successfully
-      perm_deleted: User has been permanently deleted
-      promoted: User has been successfully promoted
-      registration_method_updated: Registration method successfully updated
-      reset_password: The user has been sent an email to reset their password. (Please ask them to check their spam folder if they haven't received it)
-      restored: User has been successfully restored
-      settings: Site Settings successfully changed
-      unauthorized: You are not authorized to perform actions on this user
+      invite_email_verification: Bu yöntemi kullanabilmek için e-postaların etkinleştirilmesi gerekir. Lütfen sistem yöneticinize başvurun.
+      merge_fail: Kullanıcı hesapları birleştirilirken bir sorun oluştu. Lütfen seçilen kullanıcıları kontrol edip tekrar deneyin 
+      merge_success: Kullanıcı hesapları başarıyla birleştirildi
+      perm_deleted: Kullanıcı kalıcı olarak silindi
+      promoted: Kullanıcı başarıyla tanıtıldı
+      registration_method_updated: Kayıt yöntemi başarıyla güncellendi
+      reset_password: Kullanıcıya parolasını sıfırlaması için bir e-posta gönderildi. (Lütfen almadılarsa spam klasörlerini kontrol etmelerini isteyin)
+      restored: Kullanıcı başarıyla geri yüklendi
+      settings: Site Ayarları başarıyla değiştirildi
+      unauthorized: Bu kullanıcı üzerinde işlem yapma yetkiniz yok
     recordings:
       title: Oturum Kayıtları
       no_recordings: Kayıt Yok.
     roles:
-      appear_in_share_list: Include users with this role in the dropdown for sharing rooms
+      appear_in_share_list: Oda paylaşma açılır listesine bu role sahip kullanıcıları dahil et
       can_create_rooms: Sınıf oluşturabilir
       delete: Rolü sil
-      invalid_create: There was a problem creating a new role. Please check the role values and try again
-      invalid_order: There was a problem updating the priority of the role. Please check the values and try again
-      invalid_update: There was a problem updating the permissions of the role. Please check the values and try again
-      manage_rooms_recordings: Allow users with this role to manage server rooms and recordings
+      invalid_create: Yeni bir rol oluşturulurken bir sorun oluştu. Lütfen rol değerlerini kontrol edip tekrar deneyin
+      invalid_order: Rolün önceliği güncellenirken bir sorun oluştu. Lütfen değerleri kontrol edip tekrar deneyin
+      invalid_update: Rolün izinleri güncellenirken bir sorun oluştu. Lütfen değerleri kontrol edip tekrar deneyin
+      manage_rooms_recordings: Bu role sahip kullanıcıların sunucu odalarını ve kayıtları yönetmesine izin ver
       name: Rol Adı
       new_role: Yeni bir rol oluştur
       role_has_users: %{user_count} rol tanımlandı. Bu rolü silmeden önce hesapları silin.
       title: Roller
-      promote_email: Send an email to users when they are assigned this role
-      demote_email: Send an email to users when they are removed from this role
-      edit_site_settings: Allow users with this role to edit site settings
-      edit_roles: Allow users with this role to edit other roles
-      manage_users: Allow users with this role to manage users
-      invalid_assignment: There was a problem assigning the roles to the user. Please check the values and try again 
+      promote_email: Bu role atandıklarında kullanıcılara bir e-posta gönderin
+      demote_email: Bu rolden kaldırıldıklarında kullanıcılara bir e-posta gönderin
+      edit_site_settings: Bu role sahip kullanıcıların site ayarlarını düzenlemesine izin ver
+      edit_roles: Bu role sahip kullanıcıların diğer rolleri düzenlemesine izin ver
+      manage_users: Bu role sahip kullanıcıların kullanıcıları yönetmesine izin ver
+      invalid_assignment: Kullanıcıya roller atanırken bir sorun oluştu. Lütfen değerleri kontrol edip tekrar deneyin 
       colour:
         title: Rol rengi
-        info: Set the colour that will be associated with the role
+        info: Rolle ilişkilendirilecek rengi ayarlayın
     rooms:
       title: Sınıflar
       table:
@@ -170,58 +170,60 @@ en:
   copy: Kopyala
   date:
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
-  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
-  delete: Delete
-  delivery_error: An error occured during email delivery. Please contact an administrator!
+  default_admin: Bu hesap için hala varsayılan şifreyi kullanıyorsunuz. Lütfen tıklayın <a href="%{edit_link}">here</a>
+  delete: Sil
+  delivery_error: E-posta teslimi sırasında bir hata oluştu. Lütfen bir yöneticiye başvurun!
   docs: Dökümantasyon
   email: Email
-  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
+  email_sent: %{email_type} gönderildi! (
+56/5000
+Lütfen almadıysanız Spam klasörünüzü kontrol edin)
   enter_your_name: İsminizi girin!
   errors:
     bigbluebutton:
-      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
-      message: Invalid BigBlueButton Endpoint and Secret
-      title: Server Error
+      help: Lütfen uygun adımların atıldığından emin olun. <a href="%{doc_link}">Daha fazlası</a>
+      message: Hatalı
+      title: Sunucu Hatası
     internal:
-      message: Looks like something went wrong on our end.
-      help: The error has been logged, we'll take a look!
-      report: Report Issue
+      message: Bir sorun oluştu.
+      help: Hata günlüğe kaydedildi, bir göz atalım!
+      report: Rapor bildir
     maintenance:
       message: Sunucu bakımı.
       help: Kısa bir süre sonra buradayız!
     migration_error:
-      contact_admin: If you are not an administrator, please contact one.
-      continue: I'd like to stay using 1.0.
+      contact_admin: Yönetici değilseniz, lütfen bir tane ile iletişime geçin.
+      continue: Güncellemeden devam et
       notice: >
-        Greenlight encountered a database migration error.<br>
-        This may be because you haven't updated to Greenlight 2.0.
+        Veri tabanı hatası.<br>
+        Sistem yöneticinize başvurun.
       upgrade: Show me how to upgrade to 2.0!
-      version: We've released a new version of Greenlight, but your database isn't compatible.
+      version: Yeni versiyon.
     messages:
-      blank: can't be blank
-      too_short: is too short
-      invalid: is invalid
-      taken: has already been taken
-      accepted: must be accepted
-      confirmation: doesn't match %{attribute}
-      inclusion: is not included in the list
+      blank: boş bırakılamaz
+      too_short: çok kısa
+      invalid: hatalı
+      taken: zaten alınmış
+      accepted: kabul edilmeli
+      confirmation: eşleşmiyor %{attribute}
+      inclusion: listede yok
     no_provider:
-      message: The site you are trying to access is not enabled
-      help: Please contact your system administrator to setup Greenlight
+      message: Erişmeye çalıştığınız site etkin değil
+      help: Sistem yöneticisine başvurun
     not_found:
-      message: Sorry! The page you are looking for does not exist.
-      help: Is it possible its been removed?
+      message: Üzgünüm! Aradığınız sayfa mevcut değil.
+      help: Kaldırılımış olabilir mi?
       user_not_found:
-        help: Please contact an administrator.
-        message: Sorry, this user is not registered.
+        help: Lütfen bir yöneticiye başvurun.
+        message: Üzgünüz, bu kullanıcı kayıtlı değil.
       user_missing:
-        help: Please verify the URL and try again
-        message: The URL that you have entered is not valid.
-    title: Errors
+        help: Lütfen URL'yi doğrulayın ve tekrar deneyin
+        message: Girdiğiniz URL geçerli değil.
+    title: Hatalar
     unauthorized:
-      message: You do not have access to this application
-      help: If you believe this is a mistake, please contact your system administrator.
-  expired_reset_token: Password reset link has expired!
+      message: Bu uygulamaya erişiminiz yok
+      help: Bunun bir hata olduğunu düşünüyorsanız, lütfen sistem yöneticinize başvurun.
+  expired_reset_token: Şifre sıfırlama bağlantısının süresi doldu!
   features:
     title: Özellikler
     rooms: Kişiselleştirilmiş Sınıflar
@@ -231,10 +233,10 @@ en:
   footer:
     powered_by: Okulonline.net
   forgot_password:
-    subtitle: Forgot Password
+    subtitle: Parolanızı mı unuttunuz
     email: Email
-    submit: Submit
-  go_back: Go back
+    submit: Gönder
+  go_back: Geri
   greenlight: Okulonline
   header:
     all_recordings: Tüm Kayıtlar
@@ -245,16 +247,16 @@ en:
       settings: Profil
       signout: Çıkış
   home_room: Merkez Sınıf
-  info_update_success: Information successfully updated.
-  invalid_credentials: The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.
-  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
-  invite_message: "To invite someone to the meeting, send them this link:"
+  info_update_success: Bilgiler başarıyla güncellendi.
+  invalid_credentials: Girdiğiniz e-posta ve şifre kayıtlarımızla eşleşmedi. Tekrar deneyin veya şifrenizi sıfırlamak için Şifremi Unuttum'u tıklayın.
+  invalid_login_method: Hesap uyuşmazlığı nedeniyle giriş başarısız oldu. Omniauth ile giriş yapmanız gerekiyor.
+  invite_message: "Birini toplantıya davet etmek için bu bağlantıyı gönderin:"
   javascript:
     room:
       mailer:
         subject: 'ders kaydını izlemeni istedi.'
         body: 'Ders kaydını izlemek için linki kullan:'
-        autogenerated: 'This e-mail is auto-generated by Okulonline.net.'
+        autogenerated: 'Bu e-posta Okulonline sistemiyle oluşturuldu.'
         footer: 'Okulonline.net - Uzaktan Eğitim Sistemi.'
     search:
       start: Aramaya başla...
@@ -263,109 +265,109 @@ en:
     welcome: Okulonline Hoşgeldiniz.
     video: Açıklamaları izleyin
     upgrade: Okulonline.net
-    version: We've released a new version of Greenlight, but your database isn't compatible.
-  language_default: Default (browser language)
-  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
-  login: Sign in
-  login_title: Sign in to your account
+    version: Okulonline -uzaktan eğitim
+  language_default: Varsayılan (tarayıcı dili)
+  ldap_error: LDAP sunucusuna bağlanılamıyor. Lütfen env dosyasındaki LDAP yapılandırmanızı kontrol edin ve sunucunuzun çalıştığından emin olun.
+  login: Giriş yap
+  login_title: Hesaba giriş yap
   mailer:
     user:
       approve:
-        info: Your account has been approved.
-        signin: To access your personal rooms, click the button below and sign in.
-        signin_link: Sign In
+        info: Hesabınız onaylandı.
+        signin: Kişisel odalarınıza erişmek için aşağıdaki düğmeyi tıklayın ve oturum açın.
+        signin_link: Giriş
         signup:
-          info: A new user has signed up to use Greenlight.
-          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
-          admins_link: Visit the Organization Page
-          subject: New Greenlight User Sign Up
-          username: The user signed up with the name %{name} and the email %{email}.
-        subject: Account Approved
-        username: Your username is %{email}.
+          info: Yeni kullanıcı girişi.
+          more-info: Kullanıcıları onaylamanız gerekmektedir.
+          admins_link: Kurumsal sayfanızı ziyaret edin
+          subject: Yeni kullanıcı kaydı
+          username: %{name} ismi ve  %{email} adresi ile yeni bir kullanıcı kaydı yapıldı.
+        subject: Hesap onaylandı
+        username: Eposta adresiniz %{email}.
       demoted:
-        info: You are no longer an %{role} on %{url}.
-        more-info: You now have the same privileges as a regular user.
-        root_link: Sign In
-        subtitle: "%{role} Rights Rescinded"
+        info: Artık %{role} değilsiniz %{url}.
+        more-info: Artık normal bir kullanıcıyla aynı ayrıcalıklara sahipsiniz.
+        root_link: Giriş
+        subtitle: "%{role} İptal Edilen Haklar"
       invite:
-        info: You have been invited to your own personal space by %{name}
-        signup_info: To signup using your email, click the button below and follow the steps.
-        signup_link: Sign Up
+        info: %{name} tarafından kendi kişisel alanınıza davet edildiniz
+        signup_info: E-postanızı kullanarak kaydolmak için aşağıdaki düğmeyi tıklayın ve adımları izleyin.
+        signup_link: Kayıt
         signup:
-          info: A user that was invited has signed up to use Greenlight.
-          admins_link: Visit the Organization Page
-          subject: New Greenlight User Sign Up
-          username: The user signed up with the name %{name} and the email %{email}.
-        subject: Invitation to join BigBlueButton
-        username: Your username is %{email}.
+          info: Davet edilen bir kullanıcı okulonline'ı kullanmak için kaydoldu.
+          admins_link: Organizasyon Sayfasını ziyaret edin
+          subject: Yeni kullanıcı kaydı
+          username: %{name} ismi ve %{email} eposta adresi ile yeni bir kullanıcı kaydoldu.
+        subject: Uzaktan eğitim daveti
+        username: Kullanıcı adınız %{email}.
       password_reset:
-        title: 'Password reset'
-        welcome: A password reset has been requested for the email <b>%{email}</b>
-        message: 'If you requested this reset, then please click the link below to reset your password:'
-        reset_link: Reset Password
-        expire: This link will expire in two hours.
-        ignore: You can safely ignore this email if you did not make this request.
+        title: 'Şifre sıfırlama'
+        welcome: <b>%{email}</b> E-posta için bir şifre sıfırlaması istendi
+        message: 'Bu sıfırlamayı talep ettiyseniz, lütfen şifrenizi sıfırlamak için aşağıdaki bağlantıyı tıklayın:'
+        reset_link: Şifreyi sıfırla
+        expire: Bu bağlantının süresi iki saat içinde dolacak.
+        ignore: Bu isteği siz yapmadıysanız bu e-postayı güvenle yok sayabilirsiniz.
       promoted:
-        admins_link: Visit the Organization Page
-        info: You are now an %{role} on %{url}.
-        more-info: To view your new abilities please visit %{url}.
-        subtitle: "%{role} Rights Granted"
+        admins_link: Organizasyon Sayfasını ziyaret edin
+        info: Rolünüz %{role}  %{url}.
+        more-info: Yeni yeteneklerinizi görüntülemek için lütfen adresini ziyaret edin. %{url}.
+        subtitle: "%{role} Rol değişti"
       verify_email:
-        welcome: Welcome to your personal space, %{name}!
-        success: Leveraging %{bigbluebutton}, you can create your own rooms to host sessions and collaborate with others.
-        username: Your username is %{email}.
-        verify: To verify your account, just click the button below.
-        verify_text: 'To verify your account, just follow this link: %{url}'
-        verify_link: Verify Account
-        thanks: Thanks for joining and have a great day!
+        welcome: Kişisel alanınıza hoş geldiniz, %{name}!
+        success: %{bigbluebutton}, oturumlara ev sahipliği yapmak ve başkalarıyla işbirliği yapmak için kendi sınıflarınızı oluşturabilirsiniz.
+        username: kullanıcı adınız %{email}.
+        verify: Hesabınızı doğrulamak için aşağıdaki düğmeyi tıklamanız yeterlidir.
+        verify_text: 'Hesabınızı doğrulamak için bu bağlantıyı takip etmeniz yeterlidir: %{url}'
+        verify_link: Hesabı Doğrula
+        thanks: Katıldığınız için teşekkürler ve iyi günler!
   maintenance:
-    window_alert: Maintenance window scheduled for %{date}
-  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
-  merged: Merged
+    window_alert: Planlanan bakım tarihi %{date}
+  max_concurrent: İzin verilen maksimum eşzamanlı oturum sayısına ulaşıldı!
+  merged: Birleştirilmiş
   modal:
     create_role:
-      create: Create a new Role
-      footer_text: You can edit the individual permissions for this role after you've created it
-      name_placeholder: Enter a role name...
-      not_blank: Role name cannot be blank.
-      title: Create New Role
+      create: Yeni bir rol oluştur
+      footer_text: Oluşturduktan sonra bu rol için ayrı ayrı izinleri düzenleyebilirsiniz
+      name_placeholder: Bir isim girin...
+      not_blank: Rol adı boş olamaz.
+      title: Yeni Rol Oluştur
     create_room:
-      access_code: Access Code
-      access_code_placeholder: Generate an optional room access code
-      auto_join: Automatically join me into the room
-      create: Create Room
-      free_delete: You will be free to delete this room at any time.
-      name_placeholder: Enter a room name...
-      not_blank: Room name cannot be blank.
-      title: Create New Room
+      access_code: Erişim kodu
+      access_code_placeholder: İsteğe bağlı bir sınıf erişim kodu oluşturun
+      auto_join: Beni sınıfa otomatik olarak al
+      create: Sınıf oluştur
+      free_delete: Bu sınıfı istediğiniz zaman silebilirsiniz.
+      name_placeholder: Bir sınıf adı girin...
+      not_blank: Sınıf adı boş olamaz.
+      title: Yenii bir sınıf oluştur
     delete_account:
-      confirm: Are you sure you want to delete this account?
-      delete: I'm sure, delete this account.
-      keep: Actually, I'll keep it.
-      delete_warning: This will deactivate the user's account. All deactived users can be found under the deleted tab.
-      warning: This decision is final. You will <b>not</b> be able to recover associated data.
+      confirm: Bu hesabı silmek istediğinizden emin misiniz?
+      delete: Eminim, bu hesabı silin.
+      keep: Aslında, silmeyeceğim.
+      delete_warning: Bu, kullanıcının hesabını devre dışı bırakır. Devre dışı bırakılan tüm kullanıcılar silinen sekmenin altında bulunabilir.
+      warning: Bu karar kesindir. İlişkili verileri <b> kurtaramazsınız </b>.
     delete_room:
-      confirm: Are you sure you want to delete %{room}?
-      delete: I'm sure, delete this room.
-      keep: On second thought, I'll keep it.
-      warning: You will <b>not</b> be able to recover this room
-      recording_warning: or any of its %{recordings_num} associated recordings.
+      confirm: Silmek istediğine emin misin %{room}?
+      delete: Eminim, bu odayı sil.
+      keep: İkinci düşüncede, ben saklayacağım.
+      warning: Bu sınıfı <b> kurtaramayacaksınız </b>
+      recording_warning: veya% {recordings_num} ile ilişkili kayıtlarından herhangi biri.
     invite_user:
-      email_placeholder: Enter the users' emails (seperated by commas)
-      footer: The user will receive an email with instructions on how to sign up
-      send: Send Invite
-      title: Invite User
+      email_placeholder: Kullanıcıların e-postalarını girin (virgülle ayırarak)
+      footer: Kullanıcıya nasıl kaydolacağınızla ilgili talimatları içeren bir e-posta gönderilir
+      send: Davetiye gönder
+      title: Kullanıcıyı Davet Et
     login:
       or: or
-      with: Sign in with %{provider}
-      forgot_password: Forgot Password?
+      with: %{provider} ile oturum açın
+      forgot_password: Şifreyi unuttum?
     rename_recording:
     remove_shared:
       title: Sınfı silmek istediğinizden emin misiniz?
       delete: Eminim, sınıfı sil.
-      warning: You will <b>not</b> be able to access this room anymore.
+      warning: Artık bu sınıfa <b> erişemeyeceksiniz </b>.
     room_settings:
-      title: Sınıfı ayarları
+      title: Sınıf ayarları
       update: Sınıfı düzenle
       client: Client türü
       join_moderator: Tüm katılımcılar moderatör
@@ -388,20 +390,20 @@ en:
       title: Kullanıcı hesapları birleştir
       to: Ana hesap
       save: Birleştir
-      footer: The rooms of the account to be merged will be transfered over to the Primary Account's room list and then the account will be deleted.
-  name_update_success: Room name successfully changed!
-  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
-  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
-  omniauth_specific_error: "%{error} occured while authenticating with omniauth. Please try again or contact an administrator!"
+      footer: Birleştirilecek hesabın odaları Birincil Hesabın oda listesine aktarılacak ve daha sonra hesap silinecektir.
+  name_update_success: Sınıf adı başarıyla değiştirildi!
+  no_user_email_exists: Belirtilen e-postaya sahip mevcut bir kullanıcı yok. Lütfen doğru yazdığınızdan emin olun.
+  omniauth_error: Omniauth ile kimlik doğrulaması yapılırken bir hata oluştu. Lütfen tekrar deneyin veya bir yöneticiye başvurun!
+  omniauth_specific_error: "omniauth ile kimlik doğrulaması yapılırken %{error} oluştu. Lütfen tekrar deneyin veya bir yöneticiye başvurun!"
   pagy:
     nav:
-      prev: "&lsaquo; Prev"
-      next: "Next &rsaquo;"
+      prev: "&lsaquo; Önceki"
+      next: "Sonraki &rsaquo;"
       gap: "&hellip;"
-  password: Password
-  password_empty_notice: Password cannot be empty.
-  password_reset_success: Password has been reset.
-  password_different_notice: Password Confirmation does not match.
+  password: Şifre
+  password_empty_notice: Şifre boş bırakılamaz.
+  password_reset_success: Şifre sıfırlandı.
+  password_different_notice: Parola Onayı eşleşmiyor.
   provider:
     google: Google
     office365: Office 365
@@ -409,14 +411,14 @@ en:
     ldap: LDAP
   recaptcha:
     errors:
-      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
-      verification_failed: reCAPTCHA verification failed, please try again.
+      recaptcha_unreachable: Hata! ReCAPTCHA yanıtınızı doğrulayamadık. Lütfen tekrar deneyin.
+      verification_failed: reCAPTCHA doğrulaması başarısız oldu, lütfen tekrar deneyin.
   recording:
     all_recordings: Tüm Kayıtlar
-    email: Email Recording
-    error: There was an error retrieving %{count} recording(s)
+    email: E-posta Kaydı
+    error: %{count} kayıt alınırken bir hata oluştu
     no_recordings: bu sınıfta kayıt yok %{inject}
-    no_user_recordings: Hanüz video kaydınız yok.
+    no_user_recordings: Henüz video kaydınız yok.
     no_matched_recordings: %{inject} aradığınız kayıt bulundu.
     recorded_on: Kayıt tarihi %{date}
     table:
@@ -437,18 +439,18 @@ en:
       video: Video
   registration:
     approval:
-      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
-      signup: Your account was successfully created. It has been sent to an administrator for approval.
+      fail: Hesabınız henüz onaylanmadı. Kaydolduğunuzdan bu yana birden fazla gün geçtiyse, lütfen yöneticinize başvurun.
+      signup: Hesabınız başarılı bir şekilde oluşturulmuştur. Onay için bir yöneticiye gönderildi.
     banned:
-      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
+      fail: Bu uygulamaya erişiminiz yok. Bunun bir hata olduğunu düşünüyorsanız, lütfen yöneticinize başvurun. 
     deprecated:
-      new_signin: Select a new login method for you account. All your rooms from your old account will be migrated to the new account
-      twitter_signin: Signing in via Twitter has been deprecated and will be removed in the next release. Click <a href="%{link}"> here </a> to move your account to a new authentication method
-      twitter_signup: Sign up via Twitter has been deprecated. Please use a different sign up method
-      merge_success: Successfully merged your twitter account with your new account. Your old twitter account has been deleted
+      new_signin: Hesabınız için yeni bir giriş yöntemi seçin. Eski hesabınızdaki tüm odalarınız yeni hesaba taşınacak
+      twitter_signin: Twitter üzerinden oturum açıldı ve bir sonraki sürümde kaldırılacak. Hesabınızı yeni bir kimlik doğrulama yöntemine taşımak için <a href="%{link}">burayı</a> tıklayın.
+      twitter_signup: Twitter üzerinden kayıt reddedildi. Lütfen farklı bir kayıt yöntemi kullanın
+      merge_success: Twitter hesabınızı yeni hesabınızla başarıyla birleştirdi. Eski twitter hesabınız silindi
     invite:
-      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
-      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
+      fail: Simgeniz geçersiz veya süresi dolmuş. Bunun bir hata olduğunu düşünüyorsanız, lütfen yöneticinize başvurun.
+      no_invite: Katılmak için bir davetiyeniz yok. Lütfen bir tane almak için yöneticinize başvurun.
   remove: Sil
   rename: Adı Değiştir
   reset_password:
@@ -456,7 +458,7 @@ en:
     password: Yeni şifre
     confirm: Yeni şifre doğrulaması
     update: Şifre güncelle
-    auth_change: The authentication method has changed. Please check your email to set your password.
+    auth_change: Kimlik doğrulama yöntemi değişti. Şifrenizi ayarlamak için lütfen e-postanızı kontrol edin.
   roles:
     active: Etkin
     admin: Admin
@@ -543,7 +545,7 @@ en:
     accept_existing: Kullanım şartlarını kabul ediyorum
     title: Kullanım Şartları
   test_install: >
-    This deployment is using a pre-configured testing server, you should replace this with your own.
+    Bu dağıtım önceden yapılandırılmış bir test sunucusu kullanıyor, bunu kendi sunucunuzla değiştirmeniz gerekir.
     Detaylar için %{href}.
   update: Güncelle
   verify:
